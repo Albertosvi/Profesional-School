@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pro School</title>
+  <style>
+    /* Estilos globales */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .accordion {
+      margin-bottom: 2rem;
+    }
+    .accordion-item {
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .accordion-header {
+      background: #006666;
+      color: white;
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .accordion-content {
+      display: none;
+      padding: 1rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, select, textarea {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #009688;
+      color: white;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00796b;
+    }
+    .success-message {
+      color: green;
+      margin-top: 1rem;
+      font-weight: bold;
+      text-align: center;
+      display: none;
+    }
+    @media (max-width: 768px) {
+      header img {
+        max-height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pro School</h1>
+    <img src="https://github.com/Albertosvi/Profesional-School/blob/main/school%20image.png?raw=true" alt="Imagen de portada">
+  </header>
+
+  <main>
+    
+    <!-- Información institucional -->
+    <section class="card">
+      <h2>¿Quiénes somos?</h2>
+      <p>En Pro School, creemos en preparar a nuestros alumnos para el futuro, hoy. Somos una institución que explora y adopta nuevas tendencias en educación, integrando el uso de la tecnología y la inteligencia artificial en nuestro modelo de enseñanza.</p>
+      <p>Nuestro enfoque combina las mejores prácticas pedagógicas con herramientas innovadoras que potencian el aprendizaje, desarrollan el pensamiento crítico y fomentan la creatividad. A través del uso de plataformas inteligentes, contenidos personalizados y experiencias interactivas, guiamos a nuestros estudiantes para que se conviertan en líderes capaces de adaptarse y destacar en un mundo en constante evolución.</p>
+      <h3>Misión</h3>
+      <p>Brindar una educación innovadora que integre tecnología y nuevas tendencias para formar estudiantes críticos, creativos y preparados para los desafíos del futuro.</p>
+      <h3>Visión</h3>
+      <p>Ser una escuela líder en innovación educativa, reconocida por su compromiso con la tecnología, la inteligencia artificial y el desarrollo integral de los estudiantes.</p>
+      <h3>Valores</h3>
+      <ul>
+        <li>Innovación</li>
+        <li>Responsabilidad</li>
+        <li>Adaptabilidad</li>
+        <li>Colaboración</li>
+        <li>Excelencia</li>
+        <li>Curiosidad</li>
+        <li>Respeto</li>
+      </ul>
+    </section>
+
+    <!-- Especialidades -->
+    <section class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">Tecnología y Programación</div>
+        <div class="accordion-content">
+          Desarrollo de habilidades de programación, robótica e inteligencia artificial para el futuro digital.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Innovación y Nuevas Tendencias</div>
+        <div class="accordion-content">
+          Exploración de metodologías innovadoras y tendencias emergentes en educación.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Habilidades del Siglo XXI</div>
+        <div class="accordion-content">
+          Fomento del pensamiento crítico, colaboración, creatividad y comunicación.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Arte y Diseño Digital</div>
+        <div class="accordion-content">
+          Formación en creatividad visual, diseño digital y medios interactivos.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Ciencias Aplicadas</div>
+        <div class="accordion-content">
+          Aprendizaje práctico en matemáticas, ciencias y tecnología aplicada.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Idiomas y Cultura Global</div>
+        <div class="accordion-content">
+          Desarrollo de competencias en idiomas extranjeros y comprensión intercultural.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Opciones de especialización</div>
+        <div class="accordion-content">
+          Programas personalizados según intereses y habilidades de cada estudiante.
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de agendamiento -->
+    <section class="card">
+      <h2>Agendar Cita</h2>
+      <form id="agendarCita">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <select name="sexo" required>
+          <option value="" disabled selected>Sexo</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Masculino">Masculino</option>
+        </select>
+        <select name="grado" required>
+          <option value="" disabled selected>Grado</option>
+          <option>Preescolar</option>
+          <option>Primaria</option>
+          <option>Secundaria</option>
+          <option>Preparatoria</option>
+        </select>
+        <input type="date" name="fecha" required>
+        <input type="time" name="hora" required>
+        <textarea name="comentarios" placeholder="Comentarios adicionales"></textarea>
+        <button type="submit">Agendar</button>
+        <div class="success-message" id="successMessage">👍 Gracias, tu cita ha sido agendada. ⏳ Redirigiendo al inicio... 🎉 Te contactaremos pronto.</div>
+      </form>
+    </section>
+
+  </main>
+
+  <script>
+    // Acordeón
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+
+    // Formulario
+    const form = document.getElementById('agendarCita');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+      fetch('https://script.google.com/macros/s/AKfycbyh-F9iNr82zCpCmStnYP0P9UnM2uO4sC8CfhaeLr1DRFGNyBQbRydtnfbYAEEI7bontQ/exec', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(result => {
+        if (result.includes("Success")) {
+          form.reset();
+          successMessage.style.display = 'block';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          setTimeout(() => {
+            successMessage.style.display = 'none';
+          }, 5000);
+        } else {
+          alert('Ocurrió un error: ' + result);
+        }
+      })
+      .catch(error => {
+        alert('Error de conexión: ' + error);
+      });
+    });
+  </script>
+
+</body>
+</html>
