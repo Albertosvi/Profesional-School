@@ -1,0 +1,268 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pro School</title>
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      background-color: #003366;
+      color: white;
+      padding: 2rem 1rem 1rem;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+    .accordion {
+      background-color: #004d66;
+      color: white;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background 0.3s ease;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .accordion.active, .accordion:hover {
+      background-color: #006699;
+    }
+    .panel {
+      padding: 0 1rem;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button[type="submit"] {
+      margin-top: 1.5rem;
+      background-color: #28a745;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #218838;
+    }
+    #mensaje {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #d4edda;
+      color: #155724;
+      border-radius: 8px;
+      text-align: center;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Pro School</h1>
+  <img src="https://github.com/Albertosvi/Profesional-School/blob/main/school%20image.png?raw=true" alt="Pro School Imagen">
+</header>
+
+<div class="container">
+
+  <!-- Información Institucional -->
+  <div class="card">
+    <h2>¿Quiénes somos?</h2>
+    <p>En Pro School, creemos en preparar a nuestros alumnos para el futuro, hoy. Somos una institución que explora y adopta nuevas tendencias en educación, integrando el uso de la tecnología y la inteligencia artificial en nuestro modelo de enseñanza.</p>
+    <p>Nuestro enfoque combina las mejores prácticas pedagógicas con herramientas innovadoras que potencian el aprendizaje, desarrollan el pensamiento crítico y fomentan la creatividad.</p>
+    <p>A través del uso de plataformas inteligentes, contenidos personalizados y experiencias interactivas, guiamos a nuestros estudiantes para que se conviertan en líderes capaces de adaptarse y destacar en un mundo en constante evolución.</p>
+  </div>
+
+  <div class="card">
+    <h2>Misión</h2>
+    <p>Brindar una educación innovadora que integre tecnología y nuevas tendencias para formar estudiantes críticos, creativos y preparados para los desafíos del futuro.</p>
+  </div>
+
+  <div class="card">
+    <h2>Visión</h2>
+    <p>Ser una escuela líder en innovación educativa, reconocida por su compromiso con la tecnología, la inteligencia artificial y el desarrollo integral de los estudiantes.</p>
+  </div>
+
+  <div class="card">
+    <h2>Valores</h2>
+    <ul>
+      <li>Innovación</li>
+      <li>Responsabilidad</li>
+      <li>Adaptabilidad</li>
+      <li>Colaboración</li>
+      <li>Excelencia</li>
+      <li>Curiosidad</li>
+      <li>Respeto</li>
+    </ul>
+  </div>
+
+  <!-- Especialidades (Acordeón) -->
+  <div class="card">
+    <h2>Especialidades</h2>
+    <button class="accordion">Tecnología y Programación</button>
+    <div class="panel"><p>Desarrollo de software, robótica educativa, programación para niños y jóvenes.</p></div>
+
+    <button class="accordion">Innovación y Nuevas Tendencias</button>
+    <div class="panel"><p>Implementación de nuevas tecnologías en el aula, proyectos de innovación educativa.</p></div>
+
+    <button class="accordion">Habilidades del Siglo XXI</button>
+    <div class="panel"><p>Comunicación, colaboración, pensamiento crítico, liderazgo.</p></div>
+
+    <button class="accordion">Arte y Diseño Digital</button>
+    <div class="panel"><p>Creación multimedia, ilustración digital, animación y producción audiovisual.</p></div>
+
+    <button class="accordion">Ciencias Aplicadas</button>
+    <div class="panel"><p>Proyectos de ciencia, matemáticas aplicadas, investigación escolar.</p></div>
+
+    <button class="accordion">Idiomas y Cultura Global</button>
+    <div class="panel"><p>Programas de inglés, francés, intercambios culturales virtuales.</p></div>
+
+    <button class="accordion">Opciones de especialización</button>
+    <div class="panel"><p>Programas personalizados de acuerdo al perfil e intereses de los estudiantes.</p></div>
+  </div>
+
+  <!-- Formulario de Agendamiento -->
+  <div class="card">
+    <h2>Agendar Cita</h2>
+    <form id="formulario">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="sexo">Sexo</label>
+      <select id="sexo" name="sexo" required>
+        <option value="">Seleccione</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option>
+      </select>
+
+      <label for="grado">Grado</label>
+      <select id="grado" name="grado" required>
+        <option value="">Seleccione</option>
+        <option value="Preescolar">Preescolar</option>
+        <option value="Primaria">Primaria</option>
+        <option value="Secundaria">Secundaria</option>
+        <option value="Preparatoria">Preparatoria</option>
+      </select>
+
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="comentarios">Comentarios adicionales</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <button type="submit">Agendar Cita</button>
+      <div id="mensaje"></div>
+    </form>
+  </div>
+
+</div>
+
+<script>
+  // Script del acordeón
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach((btn) => {
+    btn.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const panel = this.nextElementSibling;
+      if (panel.style.display === 'block') {
+        panel.style.display = 'none';
+      } else {
+        panel.style.display = 'block';
+      }
+    });
+  });
+
+  // Script para enviar el formulario a Google Sheets
+  document.getElementById('formulario').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch('https://script.google.com/macros/s/AKfycbyh-F9iNr82zCpCmStnYP0P9UnM2uO4sC8CfhaeLr1DRFGNyBQbRydtnfbYAEEI7bontQ/exec', {
+      method: 'POST',
+      body: data
+    })
+    .then(response => response.text())
+    .then(result => {
+      if (result.includes('Success')) {
+        const mensaje = document.getElementById('mensaje');
+        mensaje.style.display = 'block';
+        mensaje.innerHTML = '👍 Gracias, tu cita ha sido agendada. ⏳ Redirigiendo al inicio... 🎉 Te contactaremos pronto.';
+        form.reset();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        setTimeout(() => {
+          mensaje.style.display = 'none';
+        }, 5000);
+      } else {
+        alert('Error al enviar: ' + result);
+      }
+    })
+    .catch(error => {
+      alert('Error de conexión: ' + error.message);
+    });
+  });
+</script>
+
+</body>
+</html>
