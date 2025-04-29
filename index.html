@@ -1,268 +1,250 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pro School</title>
   <style>
-    /* Estilos generales */
+    /* Estilos globales */
     body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f7fa;
+      padding: 0;
+      background-color: #f4f6f8;
       color: #333;
     }
     header {
-      text-align: center;
-      background-color: #003366;
+      background-color: #004080;
       color: white;
-      padding: 2rem 1rem 1rem;
+      text-align: center;
+      padding: 2rem 1rem;
     }
     header img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
       margin-top: 1rem;
       border-radius: 10px;
     }
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    main {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
     }
     .card {
       background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #003366;
-      margin-top: 0;
+      margin-bottom: 2rem;
     }
     .accordion {
-      background-color: #004d66;
-      color: white;
-      cursor: pointer;
-      padding: 1rem;
-      width: 100%;
-      text-align: left;
-      border: none;
-      outline: none;
-      transition: background 0.3s ease;
-      border-radius: 8px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 2rem;
     }
-    .accordion.active, .accordion:hover {
-      background-color: #006699;
-    }
-    .panel {
-      padding: 0 1rem;
-      background-color: white;
-      display: none;
+    .accordion-item {
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       overflow: hidden;
-      border: 1px solid #ccc;
-      border-top: none;
-      border-radius: 0 0 8px 8px;
+    }
+    .accordion-header {
+      background: #006666;
+      color: white;
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .accordion-content {
+      display: none;
+      padding: 1rem;
+      background: #f9f9f9;
       color: #333;
     }
     form {
       display: flex;
       flex-direction: column;
     }
-    label {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
     input, select, textarea {
-      padding: 0.7rem;
-      margin-top: 0.5rem;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 5px;
       font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
     }
-    button[type="submit"] {
-      margin-top: 1.5rem;
-      background-color: #28a745;
+    button {
+      background-color: #009688;
       color: white;
-      padding: 1rem;
+      padding: 0.75rem;
+      font-size: 1rem;
       border: none;
-      border-radius: 8px;
-      font-size: 1.2rem;
+      border-radius: 5px;
       cursor: pointer;
     }
-    button[type="submit"]:hover {
-      background-color: #218838;
+    button:hover {
+      background-color: #00796b;
     }
-    #mensaje {
+    .success-message {
+      color: green;
       margin-top: 1rem;
-      padding: 1rem;
-      background-color: #d4edda;
-      color: #155724;
-      border-radius: 8px;
+      font-weight: bold;
       text-align: center;
       display: none;
+    }
+    @media (max-width: 768px) {
+      header img {
+        max-height: 200px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Pro School</h1>
-  <img src="https://github.com/Albertosvi/Profesional-School/blob/main/school%20image.png?raw=true" alt="Pro School Imagen">
-</header>
+  <header>
+    <h1>Pro School</h1>
+    <img src="https://github.com/Albertosvi/Profesional-School/blob/main/school%20image.png?raw=true" alt="Imagen de portada">
+  </header>
 
-<div class="container">
+  <main>
+    
+    <!-- Información institucional -->
+    <section class="card">
+      <h2>¿Quiénes somos?</h2>
+      <p>En Pro School, creemos en preparar a nuestros alumnos para el futuro, hoy. Somos una institución que explora y adopta nuevas tendencias en educación, integrando el uso de la tecnología y la inteligencia artificial en nuestro modelo de enseñanza.</p>
+      <p>Nuestro enfoque combina las mejores prácticas pedagógicas con herramientas innovadoras que potencian el aprendizaje, desarrollan el pensamiento crítico y fomentan la creatividad. A través del uso de plataformas inteligentes, contenidos personalizados y experiencias interactivas, guiamos a nuestros estudiantes para que se conviertan en líderes capaces de adaptarse y destacar en un mundo en constante evolución.</p>
+      <h3>Misión</h3>
+      <p>Brindar una educación innovadora que integre tecnología y nuevas tendencias para formar estudiantes críticos, creativos y preparados para los desafíos del futuro.</p>
+      <h3>Visión</h3>
+      <p>Ser una escuela líder en innovación educativa, reconocida por su compromiso con la tecnología, la inteligencia artificial y el desarrollo integral de los estudiantes.</p>
+      <h3>Valores</h3>
+      <ul>
+        <li>Innovación</li>
+        <li>Responsabilidad</li>
+        <li>Adaptabilidad</li>
+        <li>Colaboración</li>
+        <li>Excelencia</li>
+        <li>Curiosidad</li>
+        <li>Respeto</li>
+      </ul>
+    </section>
 
-  <!-- Información Institucional -->
-  <div class="card">
-    <h2>¿Quiénes somos?</h2>
-    <p>En Pro School, creemos en preparar a nuestros alumnos para el futuro, hoy. Somos una institución que explora y adopta nuevas tendencias en educación, integrando el uso de la tecnología y la inteligencia artificial en nuestro modelo de enseñanza.</p>
-    <p>Nuestro enfoque combina las mejores prácticas pedagógicas con herramientas innovadoras que potencian el aprendizaje, desarrollan el pensamiento crítico y fomentan la creatividad.</p>
-    <p>A través del uso de plataformas inteligentes, contenidos personalizados y experiencias interactivas, guiamos a nuestros estudiantes para que se conviertan en líderes capaces de adaptarse y destacar en un mundo en constante evolución.</p>
-  </div>
+    <!-- Especialidades -->
+    <section class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">Tecnología y Programación</div>
+        <div class="accordion-content">
+          Desarrollo de habilidades de programación, robótica e inteligencia artificial para el futuro digital.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Innovación y Nuevas Tendencias</div>
+        <div class="accordion-content">
+          Exploración de metodologías innovadoras y tendencias emergentes en educación.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Habilidades del Siglo XXI</div>
+        <div class="accordion-content">
+          Fomento del pensamiento crítico, colaboración, creatividad y comunicación.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Arte y Diseño Digital</div>
+        <div class="accordion-content">
+          Formación en creatividad visual, diseño digital y medios interactivos.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Ciencias Aplicadas</div>
+        <div class="accordion-content">
+          Aprendizaje práctico en matemáticas, ciencias y tecnología aplicada.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Idiomas y Cultura Global</div>
+        <div class="accordion-content">
+          Desarrollo de competencias en idiomas extranjeros y comprensión intercultural.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Opciones de especialización</div>
+        <div class="accordion-content">
+          Programas personalizados según intereses y habilidades de cada estudiante.
+        </div>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>Misión</h2>
-    <p>Brindar una educación innovadora que integre tecnología y nuevas tendencias para formar estudiantes críticos, creativos y preparados para los desafíos del futuro.</p>
-  </div>
+    <!-- Formulario de agendamiento -->
+    <section class="card">
+      <h2>Agendar Cita</h2>
+      <form id="agendarCita">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <select name="sexo" required>
+          <option value="" disabled selected>Sexo</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Masculino">Masculino</option>
+        </select>
+        <select name="grado" required>
+          <option value="" disabled selected>Grado</option>
+          <option>Preescolar</option>
+          <option>Primaria</option>
+          <option>Secundaria</option>
+          <option>Preparatoria</option>
+        </select>
+        <input type="date" name="fecha" required>
+        <input type="time" name="hora" required>
+        <textarea name="comentarios" placeholder="Comentarios adicionales"></textarea>
+        <button type="submit">Agendar</button>
+        <div class="success-message" id="successMessage">👍 Gracias, tu cita ha sido agendada. ⏳ Redirigiendo al inicio... 🎉 Te contactaremos pronto.</div>
+      </form>
+    </section>
 
-  <div class="card">
-    <h2>Visión</h2>
-    <p>Ser una escuela líder en innovación educativa, reconocida por su compromiso con la tecnología, la inteligencia artificial y el desarrollo integral de los estudiantes.</p>
-  </div>
+  </main>
 
-  <div class="card">
-    <h2>Valores</h2>
-    <ul>
-      <li>Innovación</li>
-      <li>Responsabilidad</li>
-      <li>Adaptabilidad</li>
-      <li>Colaboración</li>
-      <li>Excelencia</li>
-      <li>Curiosidad</li>
-      <li>Respeto</li>
-    </ul>
-  </div>
-
-  <!-- Especialidades (Acordeón) -->
-  <div class="card">
-    <h2>Especialidades</h2>
-    <button class="accordion">Tecnología y Programación</button>
-    <div class="panel"><p>Desarrollo de software, robótica educativa, programación para niños y jóvenes.</p></div>
-
-    <button class="accordion">Innovación y Nuevas Tendencias</button>
-    <div class="panel"><p>Implementación de nuevas tecnologías en el aula, proyectos de innovación educativa.</p></div>
-
-    <button class="accordion">Habilidades del Siglo XXI</button>
-    <div class="panel"><p>Comunicación, colaboración, pensamiento crítico, liderazgo.</p></div>
-
-    <button class="accordion">Arte y Diseño Digital</button>
-    <div class="panel"><p>Creación multimedia, ilustración digital, animación y producción audiovisual.</p></div>
-
-    <button class="accordion">Ciencias Aplicadas</button>
-    <div class="panel"><p>Proyectos de ciencia, matemáticas aplicadas, investigación escolar.</p></div>
-
-    <button class="accordion">Idiomas y Cultura Global</button>
-    <div class="panel"><p>Programas de inglés, francés, intercambios culturales virtuales.</p></div>
-
-    <button class="accordion">Opciones de especialización</button>
-    <div class="panel"><p>Programas personalizados de acuerdo al perfil e intereses de los estudiantes.</p></div>
-  </div>
-
-  <!-- Formulario de Agendamiento -->
-  <div class="card">
-    <h2>Agendar Cita</h2>
-    <form id="formulario">
-      <label for="nombre">Nombre completo</label>
-      <input type="text" id="nombre" name="nombre" required>
-
-      <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" name="telefono" required>
-
-      <label for="correo">Correo electrónico</label>
-      <input type="email" id="correo" name="correo" required>
-
-      <label for="sexo">Sexo</label>
-      <select id="sexo" name="sexo" required>
-        <option value="">Seleccione</option>
-        <option value="Femenino">Femenino</option>
-        <option value="Masculino">Masculino</option>
-      </select>
-
-      <label for="grado">Grado</label>
-      <select id="grado" name="grado" required>
-        <option value="">Seleccione</option>
-        <option value="Preescolar">Preescolar</option>
-        <option value="Primaria">Primaria</option>
-        <option value="Secundaria">Secundaria</option>
-        <option value="Preparatoria">Preparatoria</option>
-      </select>
-
-      <label for="fecha">Fecha</label>
-      <input type="date" id="fecha" name="fecha" required>
-
-      <label for="hora">Hora</label>
-      <input type="time" id="hora" name="hora" required>
-
-      <label for="comentarios">Comentarios adicionales</label>
-      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-
-      <button type="submit">Agendar Cita</button>
-      <div id="mensaje"></div>
-    </form>
-  </div>
-
-</div>
-
-<script>
-  // Script del acordeón
-  const accordions = document.querySelectorAll('.accordion');
-  accordions.forEach((btn) => {
-    btn.addEventListener('click', function() {
-      this.classList.toggle('active');
-      const panel = this.nextElementSibling;
-      if (panel.style.display === 'block') {
-        panel.style.display = 'none';
-      } else {
-        panel.style.display = 'block';
-      }
+  <script>
+    // Acordeón
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+      });
     });
-  });
 
-  // Script para enviar el formulario a Google Sheets
-  document.getElementById('formulario').addEventListener('submit', function(e) {
-    e.preventDefault();
+    // Formulario
+    const form = document.getElementById('agendarCita');
+    const successMessage = document.getElementById('successMessage');
 
-    const form = e.target;
-    const data = new FormData(form);
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
 
-    fetch('https://script.google.com/macros/s/AKfycbyh-F9iNr82zCpCmStnYP0P9UnM2uO4sC8CfhaeLr1DRFGNyBQbRydtnfbYAEEI7bontQ/exec', {
-      method: 'POST',
-      body: data
-    })
-    .then(response => response.text())
-    .then(result => {
-      if (result.includes('Success')) {
-        const mensaje = document.getElementById('mensaje');
-        mensaje.style.display = 'block';
-        mensaje.innerHTML = '👍 Gracias, tu cita ha sido agendada. ⏳ Redirigiendo al inicio... 🎉 Te contactaremos pronto.';
-        form.reset();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-
-        setTimeout(() => {
-          mensaje.style.display = 'none';
-        }, 5000);
-      } else {
-        alert('Error al enviar: ' + result);
-      }
-    })
-    .catch(error => {
-      alert('Error de conexión: ' + error.message);
+      const formData = new FormData(form);
+      fetch('https://script.google.com/macros/s/AKfycbyh-F9iNr82zCpCmStnYP0P9UnM2uO4sC8CfhaeLr1DRFGNyBQbRydtnfbYAEEI7bontQ/exec', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(result => {
+        if (result.includes("Success")) {
+          form.reset();
+          successMessage.style.display = 'block';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          setTimeout(() => {
+            successMessage.style.display = 'none';
+          }, 5000);
+        } else {
+          alert('Ocurrió un error: ' + result);
+        }
+      })
+      .catch(error => {
+        alert('Error de conexión: ' + error);
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
